@@ -1,12 +1,12 @@
 import React from 'react'
 import Home from './Home'
-import {View, Text} from 'react-native'
 import Inicio from '../components/Inicio'
 import Login from '../components/Login'
+import Produtos from '../components/Produtos'
 
 export const profileScreen = ({navigation}) => 
     <Home navigation={navigation} name="Perfil">
-       <Inicio />
+       <Inicio navigation={navigation} />
     </Home>
 
 export const loginScreen = ({navigation}) => 
@@ -16,5 +16,5 @@ export const loginScreen = ({navigation}) =>
 
 export const productScreen = ({navigation}) => 
     <Home navigation={navigation} name="Produtos">
-        <View><Text>Lista de produtos</Text></View>
+        <Produtos />
     </Home>

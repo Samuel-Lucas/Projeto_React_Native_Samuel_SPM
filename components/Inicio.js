@@ -1,11 +1,11 @@
 import React from 'react'
-import {View, Text, StyleSheet, ImageBackground} from 'react-native'
+import {View, Text, StyleSheet, ImageBackground, Button} from 'react-native'
 import BootstrapStyleSheet from 'react-native-bootstrap-styles'
 
 const bootstrapStyleSheet = new BootstrapStyleSheet()
 const { s, c } = bootstrapStyleSheet
 
-export default function Inicio() {
+export default function Inicio({ navigation }) {
 
     return (
         <View>
@@ -17,10 +17,12 @@ export default function Inicio() {
                         A loja que presta o melhor serviço
                     </Text>
                 </ImageBackground>
+            </View>
 
-                <View style={[s.btn, s.btnPrimary, s.mt4]}>
-                    <Text style={[s.btnText, s.btnPrimaryText]}>Confira nossos produtos</Text>
-                </View>
+            <View style={{marginTop: '20px'}}>
+                <Button
+                    title="Confira nossos produtos"
+                    onPress={() => navigation.navigate('productScreen')} />
             </View>
         </View>
     )

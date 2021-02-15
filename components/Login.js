@@ -10,8 +10,8 @@ export default function Login() {
     return (
         <KeyboardAvoidingView style={styles.container}>
             <View>
-                <Text>
-                    Logo
+                <Text style={[s.textCenter, styles.login_title]}>
+                    Login
                 </Text>
             </View>
 
@@ -31,13 +31,15 @@ export default function Login() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#333',
-        marginTop: 150,
-        borderRadius: 10,
+        backgroundColor: 'gray',
+        padding: 20,
+        marginTop: 120,
+        borderRadius: 15,
         boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
     },
     login_form: {
         width: "80%",
+        justifyContent: "center",
     },
     login_input: {
         backgroundColor: "#fff",
@@ -49,13 +51,19 @@ const styles = StyleSheet.create({
     },
     login_button: {
         padding: 12,
-        backgroundColor: "orange",
+        backgroundColor: "#005ce6",
         alignSelf: "center",
         borderRadius: 5,
     },
     login_buttonText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: "#fff"
+        color: "#fff",
+    },
+    login_title: {
+        fontSize: 20,
+        color: '#fff',
+        marginTop: 5,
+        marginBottom: 10,
     }
 })
