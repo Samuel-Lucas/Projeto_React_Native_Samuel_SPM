@@ -1,11 +1,11 @@
 import React from 'react'
-import { Text, View, StyleSheet, SafeAreaView, TouchableOpacity} from 'react-native'
+import { Text, View, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity} from 'react-native'
 import {FontAwesome} from '@expo/vector-icons'
 
 export default class Home extends React.Component {
     render() {
         return (
-            <View style={{border: "1px solid blue", minHeight: "100%"}}>
+            <ScrollView style={{border: "1px solid blue", minHeight: "100%"}}>
                 <View style={styles.container}>
                     <SafeAreaView style={{flex: 1}}>
                         <View style={{flex: 1, backgroundColor: 'purple'}}>
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
                         &copy; Games Shelter
                     </Text>
                 </View>
-            </View>
+            </ScrollView>
         )
     }
 }
