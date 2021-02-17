@@ -19,7 +19,7 @@ export default function Inicio({ navigation }) {
                 </ImageBackground>
             </View>
 
-            <View style={{marginTop: '20px'}}>
+            <View style={{marginTop: 30}}>
                 <Button
                     title="Confira nossos produtos"
                     onPress={() => navigation.navigate('productScreen')} />
