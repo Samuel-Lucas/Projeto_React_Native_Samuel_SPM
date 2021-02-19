@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, TextInput, StyleSheet, Image, TouchableOpacity, KeyboardAvoidingView} from 'react-native'
+import {View, Text, TextInput, StyleSheet, TouchableOpacity, KeyboardAvoidingView} from 'react-native'
 import BootstrapStyleSheet from 'react-native-bootstrap-styles'
 
 const bootstrapStyleSheet = new BootstrapStyleSheet()
